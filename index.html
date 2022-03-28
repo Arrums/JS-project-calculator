@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Calculator by Arrum</title>
+	</head>
+	<body>
+		<main class="calculator">
+			<section class="calculator__display">
+				<div class="calculator__display__top">
+					<p class="calculator__display__top--left">=</p>
+					<p id="result" class="calculator__display__top--right"></p>
+				</div>
+
+				<div id="calculateDisp" class="calculator__display__bottom">
+					<p id="currentOper"></p>
+				</div>
+			</section>
+
+			<section class="calculator__buttons">
+				<button
+					id="btnAC"
+					class="calculator__buttons__btn calculator__buttons__btn--blue"
+				>
+					AC
+				</button>
+				<button
+					id="btnPMin"
+					class="calculator__buttons__btn calculator__buttons__btn--blue"
+				>
+					+/-
+				</button>
+				<button
+					id="btnPercent"
+					class="calculator__buttons__btn calculator__buttons__btn--blue"
+				>
+					%
+				</button>
+				<button
+					class="calculator__buttons__btn calculator__buttons__btn--blue opsbtn"
+					value="/"
+				>
+					&divide;
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					7
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					8
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					9
+				</button>
+				<button
+					class="calculator__buttons__btn calculator__buttons__btn--blue opsbtn"
+					value="*"
+				>
+					&times;
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					4
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					5
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					6
+				</button>
+				<button
+					class="calculator__buttons__btn calculator__buttons__btn--blue opsbtn"
+					value="-"
+				>
+					&minus;
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					1
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					2
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					3
+				</button>
+				<button
+					class="calculator__buttons__btn calculator__buttons__btn--blue calculator__buttons__btn calculator__buttons__btn--big opsbtn"
+					value="+"
+				>
+					&plus;
+				</button>
+				<button class="calculator__buttons__btn calculator__buttons__btn--num">
+					0
+				</button>
+				<button
+					id="btnDec"
+					class="calculator__buttons__btn calculator__buttons__btn--dot"
+					value="."
+				>
+					.
+				</button>
+				<button
+					id="btnEq"
+					class="calculator__buttons__btn calculator__buttons__btn--blue"
+				>
+					&equals;
+				</button>
+			</section>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
