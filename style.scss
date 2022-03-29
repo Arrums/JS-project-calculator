@@ -8,7 +8,6 @@
 
 body {
 	font-family: "Rubik", sans-serif;
-	color: pallette.$ghost-white;
 	background: pallette.$blue-bg;
 	width: 100%;
 	height: 100%;
@@ -16,9 +15,10 @@ body {
 
 .calculator {
 	background-color: pallette.$raisin-black;
+	color: pallette.$ghost-white;
 	max-width: 350px;
 	height: 550px;
-	margin: 15vh auto;
+	margin: 8vh auto;
 	box-shadow: -8px 5px 18px 5px pallette.$shadow;
 
 	&__display {
@@ -32,9 +32,7 @@ body {
 			margin: 0 9%;
 
 			&--left {
-				// border-bottom: solid 2px pallette.$space-cadet;
 				color: pallette.$sky-blue-crayola;
-				// padding-bottom: 4%;
 				font-size: 45px;
 			}
 
@@ -90,5 +88,17 @@ body {
 				background-color: pallette.$space-cadet;
 			}
 		}
+	}
+}
+
+footer {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	font-size: 22px;
+
+	&#signature {
+		text-align: center;
+		color: pallette.$space-cadet;
 	}
 }
