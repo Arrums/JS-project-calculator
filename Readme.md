@@ -4,7 +4,7 @@ Creating a calculator using HTML, SCSS, and Javascript based on a photo from the
 internet. This calculator has number keys from 0 to 9, has keys such as +, -,
 \*, /, =, and able to handle decimals.
 
-[Link to live project - to be added](https://arrums.github.io/JS-project-calculator/)
+[Live Project](https://arrums.github.io/JS-project-calculator/)
 
 ## Goals
 
