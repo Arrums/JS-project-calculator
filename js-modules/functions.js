@@ -20,8 +20,8 @@ export const removeNumber = () => {
 
 //function to add decimal to number
 export const addDecimal = (decPress) => {
-	if (displayOper.innerText.includes(".")) {
-		return alert("Error: number has a decimal point.");
+	if (/\.{2,}/.test(displayOper.innerText)) {
+		return "Error: Number already has decimal point.";
 	} else if (displayOper.innerText === "") {
 		return (displayOper.innerText += `0.`);
 	} else {
@@ -64,16 +64,25 @@ export const calculate = (initialNum, ops, currentNum) => {
 		default:
 			equal = initial;
 	}
+
+	// rounded the numbers
+	const roundedEq = rounding(equal);
 	//change the type of result to string
-	const strResult = equal.toString();
-	//adding the value to the upper display and if the length is more than 10, it will be reduce
-	if (strResult.length > 9) {
-		limitLength(strResult);
-	} else if (strResult === "NaN") {
-		alert("Error: this expression can't be calculated");
+	const strResult = roundedEq.toString();
+
+	if (strResult === "NaN") {
+		alert("Error: this expression can't be calculated.");
 		removeNumber();
 		//if the result is NaN, gives an alert and clear the display
 	} else {
+		displayOper.innerText = "";
 		result.innerText = strResult;
 	}
+};
+
+export const rounding = (num) => {
+	if (String(num).length > 9) {
+		return num.toFixed(7);
+	}
+	return String(num);
 };
