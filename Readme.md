@@ -6,6 +6,10 @@ internet. This calculator has number keys from 0 to 9, has keys such as +, -,
 
 [Live Project](https://arrums.github.io/JS-project-calculator/)
 
+## Screenshots
+
+![calculator](https://user-images.githubusercontent.com/100544967/169457189-e964ab94-1c85-4bcb-a0a6-543d1a9687dd.PNG)
+
 ## Goals
 
 Implementing the Javascript topics that I have learned through out the training
@@ -16,7 +20,7 @@ such as Loops, Iterators, Document Object Model (DOM), and Modules.
 ![inspiration](https://user-images.githubusercontent.com/100544967/159889087-1aef0fea-a390-4daf-b887-d6a832e3d68a.jpeg)
 
 _Calculator UI design from_
-[Calculator Design Inspiration](https://user-images.githubusercontent.com/100544967/160546703-c142d10b-c162-406f-8e33-67da163f5708.jpeg)
+[Muzli](https://search.muz.li/MTBmNDlhODc5?utm_source=muz.li-insp&utm_medium=article&utm_campaign=%2Finspiration%2Fcalculator-design%2F)
 
 ## Requirements
 
